@@ -4,8 +4,9 @@ const list = new LinkedList();
 
 list.append("dog");
 list.append("cat");
-list.prepend("cow");
+list.append("parrot");
+list.append("hamster");
+list.append("snake");
+list.append("turtle");
 
-//  0      1      2
-// cow -> dog -> cat
 console.log(list.toString());
