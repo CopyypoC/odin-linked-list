@@ -59,6 +59,15 @@ export class LinkedList {
 
   pop() {
     this.tailNode = null;
+    this.currNode = this.headNode;
+
+    while (this.currNode !== null) {
+      if (this.currNode.nextNode.nextNode === null) {
+        this.tailNode = this.currNode;
+        this.currNode.nextNode = null;
+      }
+      this.currNode = this.currNode.nextNode;
+    }
   }
 }
 

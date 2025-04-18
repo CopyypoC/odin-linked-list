@@ -8,5 +8,7 @@ list.prepend("cow");
 
 //  0      1      2
 // cow -> dog -> cat
-console.log("List.at(1):");
-console.log(list.at(1));
+console.log(list.head());
+console.log("List.pop()");
+console.log(list.pop());
+console.log(list.tail());
