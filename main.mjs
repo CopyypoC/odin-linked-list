@@ -8,7 +8,5 @@ list.prepend("cow");
 
 //  0      1      2
 // cow -> dog -> cat
-console.log(list.head());
-console.log("List.pop()");
-console.log(list.pop());
-console.log(list.tail());
+console.log(list.contains("cow"));
+console.log(list.contains("a"));
