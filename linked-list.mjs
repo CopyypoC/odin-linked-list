@@ -82,6 +82,20 @@ export class LinkedList {
 
     return false;
   }
+
+  find(value) {
+    this.currNode = this.headNode;
+
+    let i = 0;
+    while (this.currNode !== null) {
+      if (this.currNode.value === value) {
+        return i;
+      }
+      this.currNode = this.currNode.nextNode;
+      i++;
+    }
+    return null;
+  }
 }
 
 class Node {
