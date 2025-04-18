@@ -96,6 +96,18 @@ export class LinkedList {
     }
     return null;
   }
+
+  toString() {
+    let str = "";
+    this.currNode = this.headNode;
+
+    while (this.currNode !== null) {
+      str += `( ${this.currNode.value} ) -> `;
+      this.currNode = this.currNode.nextNode;
+    }
+    str += "null";
+    return str;
+  }
 }
 
 class Node {
